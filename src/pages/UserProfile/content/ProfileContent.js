@@ -8,7 +8,7 @@ export const ProfileContent = () => (
       <Section.Header>
         <Section.Title>User Profile</Section.Title>
         <Section.Description>
-          Profile content
+          Profile content==========================================================
         </Section.Description>
       </Section.Header>
     </Section.Content>

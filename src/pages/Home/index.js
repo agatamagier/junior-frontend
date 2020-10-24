@@ -14,3 +14,5 @@ export const Home = () => (
     <Footer />
   </div>
 );
+
+
