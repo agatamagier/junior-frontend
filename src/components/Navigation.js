@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { NavList } from "../components/Header/styles"
 
 const list = [
     {name: "Start", path: "/", exact: true },
@@ -14,11 +15,9 @@ const Navigation = () => {
     ))
 
     return (
-        <nav className="main">
-            <ul>
+            <NavList>
                 {menu}
-            </ul>
-        </nav>
+            </NavList>
     );
 }
 

@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
  
 `;
 
-export const Navbar = styled.ul`
+export const NavList = styled.ul`
   float: right;
   display: flex;
   flex-direction: row;
