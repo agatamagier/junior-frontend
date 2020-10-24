@@ -1,6 +1,6 @@
 import React from "react";
-import { ProfileContent} from "./content";
+import { User } from "./content";
 
 export const UserProfile = () => (
-    <ProfileContent />
+    <User />
 );

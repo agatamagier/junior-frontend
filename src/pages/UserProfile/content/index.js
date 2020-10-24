@@ -1,1 +1,1 @@
-export * from "./ProfileContent";
+export * from "./User";
