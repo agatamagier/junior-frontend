@@ -15,4 +15,25 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+ 
+`;
+
+export const Navbar = styled.ul`
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  li {
+    list-style: none;
+    font-size: ${({ theme }) => theme.font.size.base};
+    font-weight: ${({ theme }) => theme.font.weight.bold};
+    margin-right: 25px;
+    
+      & a {
+        cursor: pointer;
+        color: ${({ theme }) => theme.color.black};
+        text-decoration: none;
+      }
+  }
 `;
