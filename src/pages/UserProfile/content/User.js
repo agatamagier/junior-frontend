@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { ExamplePreview } from "components/ExamplePreview";
-
+import { ExamplePreview, Title } from "components/ExamplePreview";
 export class User extends Component {
     state = {
         user: []
@@ -22,7 +21,7 @@ export class User extends Component {
         const user = this.state.user;
         return (
             <div>
-                <h2>{user.name}</h2>
+                <Title>{user.name}</Title>
                 <ExamplePreview src= {user.avatar_url} />
                 <image src={user.avatar_url} />
             </div>

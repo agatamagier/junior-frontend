@@ -38,11 +38,21 @@ const Navigation = () => {
         history.push(location);
         window.location.reload();
     };
-    // const menu = list.map(item => (
-    //     <li key={item.name}>
-    //         <NavLink to={item.path} exact = {item.exact ? item.exact : false }>{item.name}</NavLink>
-    //     </li>
-    // ))
+
+    /**
+     * 
+     * NavLink required manual reload to display related component therefore I replaced it with buttons
+     * as no other solution worked for me
+    */
+
+    /**
+      const menu = list.map(item => (
+        <li key={item.name}>
+            <NavLink to={item.path} exact = {item.exact ? item.exact : false }>{item.name}</NavLink>
+        </li>
+    ))
+     */
+   
 
     return (
             <NavList>

@@ -5,4 +5,9 @@ export const ExamplePreview = styled.img`
   border-radius: 0.5rem;
   box-shadow: 0 1rem 4rem 0 rgba(21, 20, 50, 0.1);
   margin: 2rem auto 3rem;
+  padding-left: 25px;
+`;
+
+export const Title = styled.h2`
+  padding-left: 25px;
 `;

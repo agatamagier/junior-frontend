@@ -10,7 +10,6 @@ export const Page = () => {
             <Route path="/" exact component={Home} />
             <Route path="/my-profile" exact component={UserProfile} />
             </div>
-            
         </Router>
         
     );
