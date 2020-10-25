@@ -4,12 +4,12 @@ import { SliderContainer, SliderImg } from "./styles";
 export class Slider extends Component {
     componentDidMount() {
         function sslider() {
-            var current = 0;
-            var i;
-            var slider = document.querySelector('[data-js="sslide"]');
-            var allImages =  slider.querySelectorAll('img');
-            var imgWidth = Math.ceil(50 / allImages.length);
-            var sliderWidth = allImages.length * 100;
+            let current = 0;
+            let i;
+            const slider = document.querySelector('[data-js="sslide"]');
+            const allImages =  slider.querySelectorAll('img');
+            const imgWidth = Math.ceil(50 / allImages.length);
+            const sliderWidth = allImages.length * 100;
 
             slider.style.width = sliderWidth + '%';
 
@@ -18,9 +18,9 @@ export class Slider extends Component {
              }
 
              function animateRight(cur) {
-                var i = imgWidth,
+                let i = imgWidth,
                     time = 50;
-                var animate = setInterval(function() {
+                    const animate = setInterval(function() {
                 if(i <= sliderWidth) {
                   allImages[cur].style.marginLeft = "-" + i + "%";
                   i--;
@@ -39,8 +39,8 @@ export class Slider extends Component {
               }  
               
               function animateLeft(cur) {
-                var i = 0,
-                    time = 50;
+                let i = 0;
+                const time = 50;
                 var animate = setInterval(function() {
                 if(i <= imgWidth) {
                   allImages[cur].style.marginLeft = "-" + i  + "%";
@@ -73,8 +73,7 @@ export class Slider extends Component {
                     <SliderImg src={ require("./photos/slide-3.jpg")} />
                     <SliderImg src={ require("./photos/slide-4.jpg")} />
                     <SliderImg src={ require("./photos/slide-5.jpg")} />
-                    <SliderImg src={ require("./photos/slide-6.jpg")} />
-                    
+                    <SliderImg src={ require("./photos/slide-6.jpg")} /> 
                 </div>
             </SliderContainer>
             )
