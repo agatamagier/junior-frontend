@@ -13,8 +13,8 @@ export const App = () => (
     <Normalize />
     <GlobalStyle />
     <Router>
-    <Header />
-    <Page />
+      <Header />
+      <Page />
     </Router>
   </ThemeProvider>
 );

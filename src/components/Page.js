@@ -6,8 +6,11 @@ import { UserProfile } from "../pages/UserProfile"
 export const Page = () => {
     return (
         <Router>
+            <div>
             <Route path="/" exact component={Home} />
             <Route path="/my-profile" exact component={UserProfile} />
+            </div>
+            
         </Router>
         
     );

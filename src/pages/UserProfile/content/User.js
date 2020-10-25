@@ -16,7 +16,7 @@ export class User extends Component {
           }
         }
         xhr.send();
-        };
+    };
 
     render() {
         const user = this.state.user;
