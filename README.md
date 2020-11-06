@@ -1,2 +1,2 @@
 # junior-frontend
-junior-frontend project
+React and styled components project
